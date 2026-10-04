@@ -7,13 +7,13 @@ Here is how you can run the project locally:
 1. Clone this repo
 
     ```sh
-    git clone git@github.com:fahmiidris/fahmiidris.dev.git
+    git clone git@github.com:bimaarf/bmrf.git
     ```
 
 2. Go into the project root directory
 
     ```sh
-    cd fahmiidris.dev
+    cd bmrf/frontend
     ```
 
 3. Copy `.env.example` to `.env.local`

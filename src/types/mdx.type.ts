@@ -31,6 +31,7 @@ export type TArticleFrontmatter = TFrontmatter & {
 
 export type TProjectFrontmatter = TFrontmatter & {
     tags: Array<string>;
+    images?: Array<StaticImageData>;
     publishedAt: number;
     url: string;
     repository?: string;

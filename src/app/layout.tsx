@@ -8,8 +8,9 @@ import clsxm from '@/utils/clsxm';
 import type { Metadata } from 'next';
 import type { TLayoutProps } from '@/types/layout.type';
 
-const DEFAULT_TITLE = 'Fahmi Idris Portfolio';
-const DEFAULT_DESCRIPTION = 'Fahmi Idris Portfolio, built with Next.js (TypeScript), Tailwind CSS, and MDX.';
+const DEFAULT_TITLE = 'Bima Arifa Rachman Portfolio';
+const DEFAULT_DESCRIPTION =
+    'Bima Arifa Rachman Portfolio, Full-Stack Developer based in Pontianak, Indonesia. Built with Next.js (TypeScript), Tailwind CSS, and MDX.';
 
 export const metadata: Metadata = {
     title: {
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
         canonical: process.env.NEXT_PUBLIC_FE_URL,
     },
     authors: {
-        name: 'Fahmi Idris',
+        name: 'Bima Arifa Rachman',
         url: process.env.NEXT_PUBLIC_FE_URL,
     },
 };

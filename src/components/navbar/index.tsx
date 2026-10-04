@@ -9,7 +9,7 @@ import { GitHubIcon, LinkedInIcon } from '@/components/icons/social';
 
 import clsxm from '@/utils/clsxm';
 
-import { RESUME_URL, GITHUB_URL, LINKEDIN_URL, FAHMIIDRIS_LINKS_URL } from '@/constants/urls';
+import { RESUME_URL, GITHUB_URL, LINKEDIN_URL, PORTFOLIO_LINKS_URL } from '@/constants/urls';
 
 const navigation = {
     pages: [
@@ -33,8 +33,8 @@ export default function Navbar() {
             <div className="bg-white">
                 <div className="container flex items-center justify-between gap-x-2 py-2">
                     <div className="flex items-center gap-x-2">
-                        <Button.Link href={FAHMIIDRIS_LINKS_URL} variant="outline" size="xs">
-                            Fahmi Idris Links
+                        <Button.Link href={PORTFOLIO_LINKS_URL} variant="outline" size="xs">
+                            Bima Arifa Links
                         </Button.Link>
                     </div>
 

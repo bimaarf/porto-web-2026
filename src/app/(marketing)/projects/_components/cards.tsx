@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import NextImage from 'next/image';
+
 import type { TProjectFrontmatter } from '@/types/mdx.type';
 import Button from '@/components/button';
 
@@ -13,21 +15,32 @@ type TCardProps = {
 
 function Card({ project }: TCardProps) {
     return (
-        <article className="relative border border-slate-200 p-4">
-            <h2 className="text-sm font-semibold line-clamp-1">{project.title}</h2>
+        <article className="relative border border-slate-200">
+            {project.images?.[0] ? (
+                <NextImage
+                    src={project.images[0]}
+                    alt={project.title}
+                    className="aspect-[16/9] w-full border-b border-slate-200 object-cover"
+                    placeholder="blur"
+                />
+            ) : null}
 
-            <p className="text-base/7 font-medium mt-2 line-clamp-2 h-14">{project.description}</p>
+            <div className="p-4">
+                <h2 className="text-sm font-semibold line-clamp-1">{project.title}</h2>
 
-            <div className="mt-2 flex items-center gap-2">
-                <Button.Link href={project.url} variant="outline" size="xs">
-                    Live Demo
-                </Button.Link>
+                <p className="text-base/7 font-medium mt-2 line-clamp-2 h-14">{project.description}</p>
 
-                {project.repository && (
-                    <Button.Link href={project.repository} variant="outline" size="xs">
-                        GitHub
+                <div className="mt-2 flex items-center gap-2">
+                    <Button.Link href={project.url} variant="outline" size="xs">
+                        Live Demo
                     </Button.Link>
-                )}
+
+                    {project.repository && (
+                        <Button.Link href={project.repository} variant="outline" size="xs">
+                            GitHub
+                        </Button.Link>
+                    )}
+                </div>
             </div>
         </article>
     );
