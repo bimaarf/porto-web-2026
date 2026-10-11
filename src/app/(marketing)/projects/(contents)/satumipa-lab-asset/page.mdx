@@ -1,3 +1,5 @@
+import NextImage from 'next/image';
+
 import labAsset from './lab-asset.jpg';
 
 export const meta = {
@@ -11,3 +13,9 @@ export const meta = {
     publishedAt: 1719792000000,
     url: 'https://github.com/bimaarf/',
 };
+
+## Screenshots
+
+<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <NextImage src={labAsset} alt="Lab asset borrowing system" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+</div>

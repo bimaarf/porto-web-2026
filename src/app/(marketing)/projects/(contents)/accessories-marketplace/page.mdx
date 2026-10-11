@@ -1,3 +1,5 @@
+import NextImage from 'next/image';
+
 import accessoriesListing from './accessories-listing.jpg';
 
 export const meta = {
@@ -11,3 +13,9 @@ export const meta = {
     publishedAt: 1693526400000,
     url: 'https://github.com/bimaarf/',
 };
+
+## Screenshots
+
+<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <NextImage src={accessoriesListing} alt="Aceesoris.id product listing" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+</div>

@@ -10,7 +10,7 @@ export default function AboutPage() {
     return (
         <div className="relative flex flex-col gap-y-32 overflow-hidden py-20">
             <div className="container lg:flex">
-                <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-8 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none">
+                <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-8 lg:mx-0 lg:min-w-full lg:max-w-full lg:max-w-none lg:flex-none">
                     <div className="lg:col-end-1 lg:w-full lg:max-w-xl lg:pb-8">
                         <h2 className="text-3xl font-bold tracking-tight text-slate-700 sm:text-4xl">Hi, I&#39;m Bima Arifa Rachman.</h2>
 
@@ -42,7 +42,7 @@ export default function AboutPage() {
 
                     <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
                         <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-                            <div className="w-[37rem] max-w-none bg-gradient-to-br from-slate-100 via-white to-cyan-50 px-8 pt-10 ring-1 ring-slate-200">
+                            <div className="w-[37rem] max-w-full lg:max-w-none bg-gradient-to-br from-slate-100 via-white to-red-50 px-8 pt-10 ring-1 ring-slate-200">
                                 <NextImage
                                     src={portrait}
                                     alt="Bima Arifa Rachman, Full-Stack Developer"
@@ -58,15 +58,15 @@ export default function AboutPage() {
 
                         <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
                             <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                                <div className="flex aspect-[4/3] w-[24rem] max-w-none flex-none flex-col items-center justify-center bg-slate-700 ring-1 ring-slate-700">
+                                <div className="flex aspect-[4/3] w-[24rem] max-w-full lg:max-w-none flex-none flex-col items-center justify-center bg-slate-700 ring-1 ring-slate-700">
                                     <span className="text-5xl font-extrabold tracking-tight text-white">BR</span>
 
-                                    <span className="mt-2 text-xs font-medium uppercase tracking-widest text-cyan-300">Full-Stack Developer</span>
+                                    <span className="mt-2 text-xs font-medium uppercase tracking-widest text-red-300">Full-Stack Developer</span>
                                 </div>
                             </div>
 
-                            <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                                <div className="flex aspect-[7/5] w-[37rem] max-w-none flex-none flex-col justify-center bg-cyan-50 px-8 ring-1 ring-cyan-100">
+                            <div className="flex w-96 max-w-full flex-auto justify-end lg:w-auto lg:flex-none">
+                                <div className="flex aspect-[7/5] w-[37rem] max-w-full lg:max-w-none flex-none flex-col justify-center bg-red-50 px-8 ring-1 ring-red-100">
                                     <p className="text-lg font-bold text-slate-700">Pontianak, West Kalimantan, Indonesia</p>
 
                                     <p className="mt-2 max-w-md text-sm/6 text-slate-600">
@@ -76,7 +76,7 @@ export default function AboutPage() {
                             </div>
 
                             <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                                <div className="flex aspect-[4/3] w-[24rem] max-w-none flex-col justify-center bg-white px-8 ring-1 ring-slate-200">
+                                <div className="flex aspect-[4/3] w-[24rem] max-w-full lg:max-w-none flex-col justify-center bg-white px-8 ring-1 ring-slate-200">
                                     <p className="text-xs font-semibold uppercase tracking-widest text-slate-400">Core stack</p>
 
                                     <p className="mt-2 text-base font-bold text-slate-700">Laravel • React • Next.js • Node.js</p>
@@ -90,7 +90,7 @@ export default function AboutPage() {
             </div>
 
             <div className="container">
-                <div className="max-w-2xl lg:max-w-none">
+                <div className="max-w-2xl lg:max-w-full lg:max-w-none">
                     <h3 className="text-xl font-bold tracking-tight text-slate-700">Licenses & Certifications</h3>
 
                     <ul className="mt-4 divide-y divide-slate-200 border-y border-slate-200">
@@ -99,7 +99,7 @@ export default function AboutPage() {
                                 <p className="text-sm font-semibold text-slate-700">
                                     <Link
                                         href="https://itbox.id/certificate-verifier/12D742CC9-132EF843D-302A689"
-                                        className="underline decoration-cyan-500 decoration-2 underline-offset-2"
+                                        className="underline decoration-red-500 decoration-2 underline-offset-2"
                                     >
                                         Cyber Security Course — Advanced Level
                                     </Link>{' '}
@@ -119,7 +119,7 @@ export default function AboutPage() {
                                 <p className="text-sm font-semibold text-slate-700">
                                     <Link
                                         href="https://itbox.id/certificate-verifier/12D742CC9-132EF5EBE-302A689/"
-                                        className="underline decoration-cyan-500 decoration-2 underline-offset-2"
+                                        className="underline decoration-red-500 decoration-2 underline-offset-2"
                                     >
                                         Cyber Security Course — Intermediate Level
                                     </Link>{' '}
@@ -139,7 +139,7 @@ export default function AboutPage() {
                                 <p className="text-sm font-semibold text-slate-700">
                                     <Link
                                         href="https://itbox.id/certificate-verifier/12D742CC9-132FEC86E-302A689/"
-                                        className="underline decoration-cyan-500 decoration-2 underline-offset-2"
+                                        className="underline decoration-red-500 decoration-2 underline-offset-2"
                                     >
                                         Cyber Security Course — Basic Level
                                     </Link>{' '}

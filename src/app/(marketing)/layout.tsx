@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
+import BackToTop from '@/components/back-to-top';
 
 import type { TLayoutProps } from '@/types/layout.type';
 
@@ -13,6 +14,8 @@ export default function Layout({ children }: TLayoutProps) {
             <main className="relative">{children}</main>
 
             <Footer />
+
+            <BackToTop />
         </>
     );
 }

@@ -1,3 +1,5 @@
+import NextImage from 'next/image';
+
 import restaniShop from './restani-1.jpg';
 import restaniRating from './restani-2.jpg';
 import restaniChat from './restani-3.jpg';
@@ -13,3 +15,11 @@ export const meta = {
     publishedAt: 1680307200000,
     url: 'https://github.com/bimaarf/',
 };
+
+## Screenshots
+
+<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <NextImage src={restaniShop} alt="RESTANI Market storefront" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+    <NextImage src={restaniRating} alt="Product rating dialog" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+    <NextImage src={restaniChat} alt="In-app chat" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+</div>

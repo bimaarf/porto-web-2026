@@ -32,7 +32,7 @@ export default function Navigation({ navigation }: TNavigationProps) {
                         href={page.href}
                         className={clsxm(
                             page.href === '/' + pathname.split('/')[1]
-                                ? ['border-cyan-500 text-cyan-500']
+                                ? ['border-red-500 text-red-500']
                                 : ['border-transparent text-slate-700', 'hover:border-slate-200 hover:text-slate-800'],
                             'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-semibold duration-200 ease-out'
                         )}

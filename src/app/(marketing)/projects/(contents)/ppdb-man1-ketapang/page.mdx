@@ -1,13 +1,25 @@
+import NextImage from 'next/image';
+
 import ppdbLanding from '../../../experiences/(contents)/fullstack-man1-ketapang/ppdb-landing.png';
+import ppdb2023Dev from './ppdb-2023-dev.jpg';
+import ppdb2023Screen from './ppdb-2023-screen.jpg';
 
 export const meta = {
     title: 'PPDB MAN 1 Ketapang — Student Admission System',
     description: 'Web-based PPDB platform with dynamic forms, admin verification, realtime updates via Socket.IO, and WhatsApp notifications.',
     tags: ['React.js', 'Laravel', 'Node.js', 'MySQL'],
-    images: [ppdbLanding],
+    images: [ppdbLanding, ppdb2023Dev, ppdb2023Screen],
     createdAt: 1738368000000,
     private: false,
     publishedAt: 1738368000000,
     url: 'https://ppdbman1.yz-course.com/',
     repository: 'https://github.com/bimaarf/',
 };
+
+## Screenshots
+
+<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <NextImage src={ppdbLanding} alt="PPDB landing page" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+    <NextImage src={ppdb2023Dev} alt="PSB registration form, early version (2023)" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+    <NextImage src={ppdb2023Screen} alt="PSB form on mobile, early version (2023)" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+</div>

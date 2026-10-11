@@ -15,7 +15,7 @@ type TCardProps = {
 
 function Card({ project }: TCardProps) {
     return (
-        <article className="relative border border-slate-200">
+        <article className="relative border border-slate-200 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md active:scale-[0.98]">
             {project.images?.[0] ? (
                 <NextImage
                     src={project.images[0]}

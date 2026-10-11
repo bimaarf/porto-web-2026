@@ -1,3 +1,5 @@
+import NextImage from 'next/image';
+
 import disnakerLanding from './disnaker-landing.png';
 
 export const meta = {
@@ -11,3 +13,9 @@ export const meta = {
     publishedAt: 1727740800000,
     url: 'https://disnaker.yz-course.com/',
 };
+
+## Screenshots
+
+<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <NextImage src={disnakerLanding} alt="Disnaker Bengkayang portal" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+</div>

@@ -46,7 +46,7 @@ function _Header({ title, description, maxWidth = '3xl', children }: THeaderProp
     return (
         <div className="container flex flex-col gap-y-4">
             <div className={clsxm('max-w-3xl', maxWidthClass)}>
-                <h2 className="text-base/7 font-semibold text-cyan-500">{title}</h2>
+                <h2 className="text-base/7 font-semibold text-red-500">{title}</h2>
                 <p className={clsxm('mt-4 text-3xl font-extrabold tracking-tight text-slate-700', 'sm:text-4xl')}>{children}</p>
             </div>
 

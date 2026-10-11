@@ -1,3 +1,5 @@
+import NextImage from 'next/image';
+
 import mangroveLanding from './mangrove.jpg';
 
 export const meta = {
@@ -10,3 +12,9 @@ export const meta = {
     publishedAt: 1672531200000,
     url: 'https://mempawahmangrove.yz-course.com',
 };
+
+## Screenshots
+
+<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <NextImage src={mangroveLanding} alt="Mempawah Mangrove Park site" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+</div>

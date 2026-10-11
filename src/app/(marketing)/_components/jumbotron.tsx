@@ -15,7 +15,7 @@ export default function Jumbotron({ tags, title, subtitle, description }: TJumbo
         <header id="jumbotron" aria-placeholder="title-jumbotron" className="relative overflow-hidden border-b border-slate-200">
             <div className="container flex flex-col items-center justify-center gap-y-4 py-20 text-center">
                 <div className="flex max-w-3xl flex-col items-center justify-center">
-                    <h2 className="text-base/7 font-semibold text-cyan-500">{title}</h2>
+                    <h2 className="text-base/7 font-semibold text-red-500">{title}</h2>
                     <p className={clsxm('mt-4 text-3xl font-extrabold tracking-tight text-slate-700', 'sm:text-4xl')}>{subtitle}</p>
                 </div>
 

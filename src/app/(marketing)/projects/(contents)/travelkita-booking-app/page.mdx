@@ -1,3 +1,5 @@
+import NextImage from 'next/image';
+
 import travelkitaTeam from './travelkita-2.jpg';
 import travelkitaLaunch from './travelkita-1.jpg';
 import travelkitaWeb from './travelkita-3.jpg';
@@ -10,9 +12,20 @@ export const meta = {
     description:
         'Startup-competition mobile booking app by a 3-person FMIPA UNTAN team: travel-date selection, seat quantity, order tracking, driver info, and in-app chatting with RESTful backend.',
     tags: ['React Native', 'Laravel', 'MySQL'],
-    images: [travelkitaTeam, travelkitaLaunch, travelkitaWeb, travelkitaDev1, travelkitaDev2, travelkitaDev3],
+    images: [travelkitaLaunch, travelkitaTeam, travelkitaWeb, travelkitaDev1, travelkitaDev2, travelkitaDev3],
     createdAt: 1664584800000,
     private: false,
     publishedAt: 1664584800000,
     url: 'https://github.com/bimaarf/',
 };
+
+## Screenshots
+
+<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <NextImage src={travelkitaLaunch} alt="Launching at FMIPA UNTAN" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+    <NextImage src={travelkitaTeam} alt="TravelKita.id team" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+    <NextImage src={travelkitaWeb} alt="Web booking form" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+    <NextImage src={travelkitaDev1} alt="React Native development" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+    <NextImage src={travelkitaDev2} alt="Order detail screen" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+    <NextImage src={travelkitaDev3} alt="In-app chatting" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+</div>

@@ -17,13 +17,13 @@ export type TButtonWithModify = TButtonProps & TModify;
 
 const variants = modify(
     [
-        'inline-flex items-center justify-center text-sm font-medium border outline-none ease-in-out duration-200',
-        'focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 disable:opacity-75 disabled:pointer-events-none',
+        'inline-flex items-center justify-center text-sm font-medium border outline-none ease-in-out duration-200 active:scale-[0.97]',
+        'focus:ring-2 focus:ring-red-500 focus:ring-offset-2 disable:opacity-75 disabled:pointer-events-none',
     ],
     {
         variants: {
             variant: {
-                cyan: ['border-transparent bg-cyan-500 text-white', 'hover:bg-cyan-400'],
+                red: ['border-transparent bg-red-500 text-white', 'hover:bg-red-400'],
                 outline: ['border-slate-200 text-slate-700', 'hover:bg-slate-50 hover:border-slate-300'],
             },
             size: {
@@ -32,7 +32,7 @@ const variants = modify(
             },
         },
         defaultVariants: {
-            variant: 'cyan',
+            variant: 'red',
             size: 'sm',
         },
     }

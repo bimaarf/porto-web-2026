@@ -1,3 +1,5 @@
+import NextImage from 'next/image';
+
 import ktpHubLanding from './ktp-hub-landing.png';
 
 export const meta = {
@@ -11,3 +13,9 @@ export const meta = {
     publishedAt: 1756684800000,
     url: 'https://ktp-hub.yz-course.com',
 };
+
+## Screenshots
+
+<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <NextImage src={ktpHubLanding} alt="KTP-HUB homepage" placeholder="blur" className="w-full border border-slate-200 object-cover" />
+</div>

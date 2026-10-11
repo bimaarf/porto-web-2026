@@ -28,7 +28,7 @@ const _Input = React.forwardRef<HTMLInputElement, TInputProps>(function _Input(
                 <input
                     className={clsxm(
                         'block w-full border border-slate-200 py-1.5 text-sm/6 text-slate-700 outline-none duration-200 ease-in-out',
-                        'placeholder:text-slate-400 focus:border-slate-200 focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2',
+                        'placeholder:text-slate-400 focus:border-slate-200 focus:ring-2 focus:ring-red-500 focus:ring-offset-2',
                         className
                     )}
                     {...{ type, id, placeholder, ref }}
